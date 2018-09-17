@@ -1,0 +1,12 @@
+<div class="card card-default text-center bg-dark text-white">
+  <div class="card-header bg-white img-logo">
+    <img class="card-logo" src="{{gafa.urlLogo}}" alt="{{gafa.name}}">
+  </div>
+  <div class="card-body">
+      <span *ngIf="gafa.code" class="badge badge-success">Up !</span>
+      <span *ngIf="!gafa.code" class="badge badge-danger">Down :(</span>
+  </div>
+  <div class="footer">
+    <p class="card-text"><small>Response time : {{gafa.responseTime}}</small></p>
+  </div>
+</div>
