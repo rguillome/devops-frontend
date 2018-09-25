@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import Gafa from '../model/Gafa';
-import GafaService from '../services/gafa.service';
+import {GafaService} from '../services/gafa.service';
 
 @Component({
   selector: 'app-dashboard-gafa',
   templateUrl: './dashboard-gafa.component.html',
   styleUrls: ['./dashboard-gafa.component.css'],
-  providers: [
-    GafaService ]
+  providers: [GafaService]
 })
 export class DashboardGafaComponent implements OnInit {
 
